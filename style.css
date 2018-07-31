@@ -1,0 +1,797 @@
+                html {
+                    box-sizing: border-box;
+                }
+                
+                *,
+                *:before,
+                *:after {
+                    box-sizing: inherit;
+                }
+                
+                body {
+                    width: 320px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                @media (min-width: 768px) {
+                    body {
+                        width: 768px;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    body {
+                        min-width: 1124px;
+                    }
+                    header,
+                    main,
+                    footer {
+                        padding-left: 73px;
+                        padding-right: 73px;
+                    }
+                }
+                
+                header {
+                    display: flex;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+                }
+                
+                .header__logo {
+                    width: 107px;
+                    height: 11px;
+                    margin-left: 8px;
+                    margin-top: 31px;
+                    margin-bottom: 30px;
+                }
+
+                .header__when-to-md {
+                    display: none;
+                }
+
+                @media (min-width: 768px) {
+                    .header__when-to-md {
+                        display: flex;
+                        margin: 16px 88px 16px 21px;
+                    }
+                    .header__when-to-md__choose-when {
+                        display: flex;
+                        width: 57px;
+                        height: 40px;
+                        border: 1px solid #E0E0E0;
+                        box-sizing: border-box;
+                        border-radius: 2px;
+                    }
+                    .header__when-to-md__choose-when__text {
+                        margin: auto;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 24px;
+                        font-size: 13px;
+                        color: #1D1D1D;
+                    }
+                    .header__when-to-md__to-text {
+                        width: 12px;
+                        height: 16px;
+                        margin: auto 10px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: normal;
+                        font-size: 13px;
+                        color: #626262;
+                    }
+                    .header__when-to-md__choose-place {
+                        display: flex;
+                        width: 215px;
+                        height: 40px;
+                        border: 1px solid #E0E0E0;
+                        box-sizing: border-box;
+                        border-radius: 2px;
+                    }
+                    .header__when-to-md__choose-place__logo {
+                        width: 12px;
+                        height: 16px;
+                        margin-left: 12px;
+                        margin-top: 12px;    
+                    }
+                    .header__when-to-md__choose-place__text {
+                        margin: 8px auto 8px 12px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 24px;
+                        font-size: 13px;  
+                        color: #1D1D1D;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    .header__logo {
+                        width: 121px;
+                    }
+                    .header__when-to-md {
+                        display: flex;
+                        margin-left: 122px;
+                        margin-right: 92px;
+                    }
+                    .header__when-to-md__choose-when {
+                        width: 65px;
+                    }
+                    .header__when-to-md__to-text {
+                        margin: auto 9px;
+                    }
+                    .header__when-to-md__choose-place {
+                        width: 292px;
+                    }
+                    .header__when-to-md__choose-when__text,
+                    .header__when-to-md__choose-place__text {
+                        font-size: 16px;
+                    }
+                }
+                
+                .sign-in-button {
+                    display: inline-flex;
+                    height: 40px;
+                    width: 72px;
+                    margin-left: 45px;
+                    margin-top: 16px;
+                    background-color: #fff;
+                    color: #1D1D1D;
+                    border: 1px solid #E0E0E0;
+                    border-radius: 2px;
+                }
+
+                
+                .register-button {
+                    display: inline-flex;
+                    width: 72px;
+                    height: 40px;
+                    margin-left: 12px;
+                    margin-top: 16px;
+                    background-color: #000;
+                    color: #fff;
+                    border-radius: 2px;
+                }
+                
+                @media (min-width: 768px) {
+                    .sign-in-button {
+                        margin: 16px 16px 16px 0px;
+                        width: 80px;
+                        height: 40px;
+                    }
+                    .register-button {
+                        width: 80px;
+                        height: 40px;
+                        margin: 16px 0px;
+                    }
+                }
+                
+                .sign-in-button__text,
+                .register-button__text {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 11px;
+                    margin: auto;
+                }
+
+                .header__basket-picture {
+                    display: none; 
+                }
+
+                @media (min-width: 768px) {
+                    .header__basket-picture {
+                        display: inline-block; 
+                        width: 19px;
+                        height: 22px;
+                        margin: 24.66px 18px 25.34px 27px;
+                    }
+                }
+                
+                main {
+                    background: #F2F2F2;
+                    padding-bottom: 48px;
+                }
+                
+                .search {
+                    margin-left: 8px;
+                    padding-top: 32px;
+                    margin-right: 8px;
+                    display: flex;
+                }
+                
+                .search__logo {
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 12px;
+                }
+                
+                @media (min-width: 768px) {
+                    .search__logo {
+                        width: 22px;
+                        height: 22px;
+                        margin-top: 8px;
+                    }
+                }
+                
+                .search-form {
+                    display: inline-block;
+                    margin-left: 8px;
+                    margin-top: 8px;
+                    margin-bottom: 16px;
+                }
+
+                .search-form__input {
+                    display: flex;
+                    width: 182px;
+                    height: 24px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 24px;
+                    font-size: 13px;
+                    color: #626262;
+                    opacity: 0.5;
+                    background-color: #F2F2F2;
+                    border: #F2F2F2;
+                }
+
+                @media (min-width: 768px) {
+                    .search-form__input {
+                        width: 223px;
+                        font-size: 16px;
+                    }
+                }
+                
+                .line-after-search {
+                    height: 1px;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    background: #757575;
+                    mix-blend-mode: normal;
+                    opacity: 0.3;
+                }
+                
+                .when-text {
+                    margin-top: 24px;
+                    margin-left: 8px;
+                    display: inline-block;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 11px;
+                    color: #626262;
+                }
+                
+                .to-text {
+                    margin-top: 24px;
+                    display: inline-block;
+                    margin-left: 53px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 11px;
+                    color: #626262;
+                }
+                
+                .when-to {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 8px;
+                    width: 308px;
+                    height: 61px;
+                }
+                
+                @media (min-width: 768px) {
+                    .when-text,
+                    .to-text,
+                    .when-to {
+                        display: none;
+                    }
+                }
+                
+                .when-to__choose-when {
+                    display: flex;
+                    width: 65px;
+                    height: 40px;
+                    margin-top: 8px;
+                    border: 1px solid #E0E0E0;
+                    box-sizing: border-box;
+                    border-radius: 2px;
+                }
+                
+                .when-to__choose-place {
+                    display: flex;
+                    width: 227px;
+                    height: 40px;
+                    margin-left: 16px;
+                    margin-top: 8px;
+                    border: 1px solid #E0E0E0;
+                    box-sizing: border-box;
+                    border-radius: 2px;
+                }
+                
+                .when-to__choose-when__text {
+                    margin: auto;
+                    width: 33px;
+                    height: 24px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 24px;
+                    font-size: 13px;
+                    color: #1D1D1D;
+                }
+                
+                .when-to__choose-place__logo {
+                    width: 12px;
+                    height: 16px;
+                    margin-left: 11px;
+                    margin-top: 12px;
+                }
+                
+                .when-to__choose-place__text {
+                    margin: auto;
+                    width: 149px;
+                    height: 24px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 24px;
+                    font-size: 13px;
+                    color: #1D1D1D;
+                }
+                
+                .restaurants-title {
+                    margin-left: 8px;
+                    margin-top: 40px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 34px;
+                    font-size: 22px;
+                    color: #1D1D1D;
+                }
+
+                @media (min-width: 768px) {
+                    .restaurants-title {
+                        margin-top: 56px;
+                    }
+                }
+                .restaurants__card {
+                    margin-left: 8px;
+                    margin-top: 16px;
+                    margin-right: 4px;
+                }
+                
+                .restaurants__card__picture {
+                    width: 100%;
+                    height: 250px;
+                }
+
+                @media (min-width: 768px) {
+                    .restaurants__card__picture {
+                        height:256px;
+                    }
+                }
+                
+                .restaurants__card__name {
+                    height: 24px;
+                    margin-top: 14px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 24px;
+                    font-size: 16px;
+                    color: #1D1D1D;
+                }
+                
+                .restaurants__card__cuisine {
+                    height: 21px;
+                    margin-top: 4px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 21px;
+                    font-size: 14px;
+                    color: #626262;
+                }
+                
+                .restaurants__card__time {
+                    height: 21px;
+                    margin-top: 4px;
+                    margin-bottom: 20px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 21px;
+                    font-size: 13px;
+                    color: #1D1D1D;
+                }
+
+                .restaurants__card-5,
+                .restaurants__card-6,
+                .restaurants__card-7,
+                .restaurants__card-8,
+                .restaurants__card-9 {
+                    display: none;
+                }
+
+                @media (min-width: 768px) {
+                    .restaraunts__card__name {
+                        margin-top: 16px;
+                    }
+                    .restaurants__card__cuisine {
+                        margin-top: 5px;
+                    }
+                    .restaurants__card__time {
+                        margin-top: 3px;
+                    }
+                    .restaurants__card-5,
+                    .restaurants__card-6,
+                    .restaurants__card-7,
+                    .restaurants__card-8,
+                    .restaurants__card-9 {
+                        display: block;
+                    }
+                }
+                
+                footer {
+                    background: #262626;
+                }
+                
+                .footer__logo {
+                    margin-top: 56px;
+                    margin-left: 8px;
+                }
+                
+                .line-after-logo {
+                    height: 1px;
+                    margin: 40px 8px 0px 8px;
+                    background: #FFFFFF;
+                    opacity: 0.4;
+                }
+                
+                .choose-language {
+                    position: relative;
+                    width: 173px;
+                    height: 40px;
+                    margin-left: 8px;
+                    margin-top: 32px;
+                    background: #3B3B3B;
+                    border-radius: 2px;
+                }
+                
+                .choose-language__pic1 {
+                    position: absolute;
+                    left: 16px;
+                    top: 12px;
+                }
+                
+                .choose-language__text {
+                    position: absolute;
+                    left: 48px;
+                    top: 12px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #FFFFFF;
+                }
+                
+                .choose-language__pic2 {
+                    position: absolute;
+                    right: 16px;
+                    top: 16px;
+                }
+                
+                .social {
+                    position: relative;
+                    width: 96px;
+                    height: 59px;
+                    margin-left: 8px;
+                    margin-top: 32px;
+                }
+                
+                .social__hash {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 16px;
+                    color: #49A144;
+                }
+                
+                .social__tag {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                }
+                
+                .social__fb-logo {
+                    position: absolute;
+                    left: 3.8px;
+                    top: 38.8px;
+                    width: 16.4px;
+                    height: 16.4px;
+                }
+                
+                .social__tw-logo {
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    left: 36px;
+                    top: 36px;
+                }
+                
+                .social__inst-logo {
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    left: 72px;
+                    top: 36px;
+                }
+                
+                .nav-block-1 {
+                    margin-top: 39px;
+                    margin-left: 8px;
+                }
+
+                .nav-block-2 {
+                    margin-left: 8px;
+                }
+
+                @media (min-width: 768px) {
+                    .nav-block-2 {
+                        margin-top: 39px;
+                    }
+                }
+                
+                .nav-element {
+                    margin-top: 23px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #FFFFFF;
+                }
+
+                .line-after-nav {
+                    height: 1px;
+                    margin: 40px 8px 0px 8px;
+                    background: #FFFFFF;
+                    opacity: 0.4;
+                }
+                
+                .app-store-banner {
+                    width: 108.6px;
+                    height: 36px;
+                    margin-left: 39px;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
+                
+                .google-play-banner {
+                    width: 124px;
+                    height: 36px;
+                    margin-left: 25.19px;
+                }
+
+                @media (min-width: 768px) {
+                    .app-store-banner {
+                        margin:40px 40.61px 40px 243.61px;
+                    }
+                    .google-play-banner {
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    .app-store-banner {
+                        margin:41px 40.61px 40px 348px;
+                    }
+                    .google-play-banner {
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .line-after-banners {
+                    height: 1px;
+                    margin: 0px 8px;
+                    background: #FFFFFF;
+                    opacity: 0.4;
+                }
+                
+                .about {
+                    position: relative;
+                    margin-left: 8px;
+                    margin-top: 40px;
+                    padding-bottom: 40px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 11px;
+                    color: #FFFFFF;
+                }
+                
+                .about__privacy,
+                .about__terms {
+                    margin-top: 24px;
+                }
+
+                @media (min-width: 768px) {
+                    .about__privacy,
+                    .about__terms {
+                        margin-top: 0px;
+                    }
+                }
+                
+                .download-logo {
+                    display: flex;
+                    position: absolute;
+                    width: 64px;
+                    height: 64px;
+                    background: #59BD5A;
+                    border-radius: 2px;
+                    right: 16px;
+                    bottom: 24px;
+                }
+
+                @media (min-width: 768px) {
+                    .download-logo {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                
+                .download-logo__arrow {
+                    margin: auto;
+                }
+                
+                .containter {
+                    max-width: 976px;
+                }
+                
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                
+                .col-xs-1 {
+                    flex-basis: 8.3333%;
+                }
+                
+                .col-xs-2 {
+                    flex-basis: 16.6666%;
+                }
+                
+                .col-xs-3 {
+                    flex-basis: 24.9999%;
+                }
+                
+                .col-xs-4 {
+                    flex-basis: 33.3333%;
+                }
+                
+                .col-xs-5 {
+                    flex-basis: 41.6665%;
+                }
+                
+                .col-xs-6 {
+                    flex-basis: 49.9998%;
+                }
+                
+                .col-xs-7 {
+                    flex-basis: 58.3331%;
+                }
+                
+                .col-xs-8 {
+                    flex-basis: 66.6664%;
+                }
+                
+                .col-xs-9 {
+                    flex-basis: 74.9997%;
+                }
+                
+                .col-xs-10 {
+                    flex-basis: 83.3333%;
+                }
+                
+                .col-xs-11 {
+                    flex-basis: 91.6663%;
+                }
+                
+                .col-xs-12 {
+                    flex-basis: 100%;
+                }
+                
+                @media (min-width: 768px) {
+                    .col-md-1 {
+                        flex-basis: 8.3333%;
+                    }
+                    .col-md-2 {
+                        flex-basis: 16.6666%;
+                    }
+                    .col-md-3 {
+                        flex-basis: 24.9999%;
+                    }
+                    .col-md-4 {
+                        flex-basis: 33.3333%;
+                    }
+                    .col-md-5 {
+                        flex-basis: 41.6665%;
+                    }
+                    .col-md-6 {
+                        flex-basis: 49.9998%;
+                    }
+                    .col-md-7 {
+                        flex-basis: 58.3331%;
+                    }
+                    .col-md-8 {
+                        flex-basis: 66.6664%;
+                    }
+                    .col-md-9 {
+                        flex-basis: 74.9997%;
+                    }
+                    .col-md-10 {
+                        flex-basis: 83.3333%;
+                    }
+                    .col-md-11 {
+                        flex-basis: 91.6663%;
+                    }
+                    .col-md-12 {
+                        flex-basis: 100%;
+                    }
+                }
+                
+                @media (min-width: 1124px) {
+                    .col-xl-1 {
+                        flex-basis: 8.3333%;
+                    }
+                    .col-xl-2 {
+                        flex-basis: 16.6666%;
+                    }
+                    .col-xl-3 {
+                        flex-basis: 24.9999%;
+                    }
+                    .col-xl-4 {
+                        flex-basis: 33.3333%;
+                    }
+                    .col-xl-5 {
+                        flex-basis: 41.6665%;
+                    }
+                    .col-xl-6 {
+                        flex-basis: 49.9998%;
+                    }
+                    .col-xl-7 {
+                        flex-basis: 58.3331%;
+                    }
+                    .col-xl-8 {
+                        flex-basis: 66.6664%;
+                    }
+                    .col-xl-9 {
+                        flex-basis: 74.9997%;
+                    }
+                    .col-xl-10 {
+                        flex-basis: 83.3333%;
+                    }
+                    .col-xl-11 {
+                        flex-basis: 91.6663%;
+                    }
+                    .col-xl-12 {
+                        flex-basis: 100
+                    }
