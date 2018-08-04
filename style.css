@@ -194,9 +194,310 @@
                 
                 main {
                     background: #F2F2F2;
-                    padding-bottom: 48px;
+                    position: relative;
+                    padding-bottom: 24px;
+                }
+
+                @media (min-width: 768px) {
+                    main {
+                        padding-bottom: 16px;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    main {
+                        padding-bottom: 31px;
+                        background: #FFF;
+                    }
+                }
+
+                .restaurant-photo-xs {
+                    display: block;
+                    width: 320px;
+                    height: 255px;
+                }
+
+                .restaurant-photo-md,
+                .restaurant-photo-xl {
+                    display: none;
+                }
+
+                @media (min-width: 768px) {
+                    .restaurant-photo-xs {
+                        display: none;
+                    }
+                    .restaurant-photo-md {
+                        display: block;
+                        width: 768px;
+                        height: 364px;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    .restaurant-photo-md {
+                        display: none;
+                    }
+                    .restaurant-photo-xl {
+                        display: block;
+                        width: 1124px;
+                        height: 364px;
+                        margin-left: -73px;
+                        margin-right: -73px;
+                    }
                 }
                 
+                .restaurant-card {
+                    width: 308px;
+                    height: 180px;
+                    position: absolute;
+                    left: 8px;
+                    top: 131px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+                    border-radius: 2px;
+                }
+
+                .restaurant-card__name {
+                    margin-top: 24px;
+                    margin-left: 49px;
+                    margin-right: 49px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 24px;
+                    color: #1D1D1D;
+                }
+
+                .restaurant-card__cuisine {
+                    margin-top: 40px;
+                    margin-left: 91px;
+                    margin-right: 91px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 14px;
+                    color: #626262;
+                }
+
+                .restaurant-card__time {
+                    display: flex;
+                    width: 98px;
+                    height: 32px;
+                    margin-top: 16px;
+                    margin-left: 105px;
+                    margin-right: 105px;
+                    background: #262626;
+                    border-radius: 16px;
+                }
+
+                .restaurant-card__time__text {
+                    margin: auto;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #FFFFFF;
+                }
+
+                @media (min-width: 768px) {
+                    .restaurant-card {
+                        width: 432px;
+                        height: 204px;
+                        top: 80px;
+                    }
+                    .restaurant-card__name {
+                        display: block;
+                        margin-top: 38px;
+                        margin-left: 48px;
+                        font-size: 36px;
+                    }
+                    .restaurant-card__cuisine {
+                        display: inline-block;
+                        margin-top: 62px;
+                        margin-left: 48px;
+                        margin-right: 62px;
+                        width: 172px;
+                    }
+                    .restaurant-card__time {
+                        display: inline-flex;
+                        margin-top: 54px;
+                        margin-right: 48px;
+                        margin-left: 0px;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    .restaurant-card {
+                        left: 81px;
+                    }
+                }
+
+                .dieshes-types {
+                    display: none;
+                }
+
+                @media (min-width: 768px) {
+                    .dishes-types {
+                        display: flex;
+                        background: #FFFFFF;
+                        border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+                        height: 80px;
+                    }
+                    .type {
+                        display: inline-block;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: normal;
+                        font-size: 16px;
+                        color: #626262;
+                        margin: auto 40px auto 0;
+                    }
+                    .active-type {
+                        margin-left: 8px;
+                        color: #327430;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .dishes-types {
+                        margin-left: -73px;
+                        margin-right: -73px;
+                        padding-left: 73px;
+                        padding-right: 73px;
+                    }
+                }
+
+                .menu-name {
+                    margin-top: 112px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 34px;
+                    font-size: 22px;
+                    text-align: center;
+                    color: #1D1D1D;
+                }
+
+                .line-after-menu-name {
+                    width: 50px;
+                    height: 1px;
+                    margin: 12px auto 43px auto;
+                    background: #757575;
+                }
+
+                @media (min-width: 768px) {
+                    .line-after-menu-name {
+                        display: none;
+                    }
+                    .menu-name {
+                        margin-top: 56px;
+                        margin-left: 8px;
+                        margin-bottom: 32px;
+                        text-align: left;
+                    }
+                }
+
+                .menu {
+
+                }
+
+                .menu__dish-card {
+                    position: relative;
+                    margin-left: 8px;
+                    margin-right: 4px;
+                    margin-bottom: 16px;
+                    height: 102px;
+                    border-bottom: 1px solid rgba(117, 117, 117, 0.2)
+                }
+
+                .menu__dish-card__name {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #1D1D1D;
+                }
+
+                .menu__dish-card__photo {
+                    width: 102px;
+                    height: 102px;
+                    position: absolute;
+                    right:0;
+                }
+
+                .menu__dish-card__addition {
+                    margin-top: 4px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 21px;
+                    font-size: 13px;
+                    color: #626262;
+                }
+
+                .menu__dish-card__price {
+                    position: absolute;
+                    bottom: 16px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 21px;
+                    font-size: 15px;
+                    color: #1D1D1D;
+                }
+
+                @media (min-width: 768px) {
+                    .menu__dish-card {
+                        border: 1px solid rgba(117, 117, 117, 0.2);
+                        height: 160px;
+                        margin-bottom: 32px;
+                    }
+                    .menu__dish-card__name {
+                        margin-top: 16px;
+                        margin-left: 24px;
+                        font-size: 16px;
+                    }
+                    .menu__dish-card__addition {
+                        margin-left: 24px;
+                    }
+                    .menu__dish-card__price {
+                        left: 24px;
+                    }
+                    .menu__dish-card__photo {
+                        width: 200px;
+                        height: 160px;
+                    }
+                    .menu__active-dish-card {
+                        background: rgba(117, 117, 117, 0.04)
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    .menu__dish-card {
+                        margin-bottom: 49px;
+                    }
+                    .menu__dish-card__name {
+                        margin-top: 16px;
+                        margin-left: 16px;
+                        font-size: 16px;
+                    }
+                    .menu__dish-card__addition {
+                        margin-left: 16px;
+                    }
+                    .menu__dish-card__price {
+                        left: 16px;
+                    }
+                    .menu__dish-card__photo {
+                        width: 170px;
+                        height: 160px;
+                    }
+                }
+
                 .search {
                     margin-left: 8px;
                     padding-top: 32px;
@@ -244,6 +545,12 @@
                     .search-form__input {
                         width: 223px;
                         font-size: 16px;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    .search-form__input {
+                        background: #FFF;
                     }
                 }
                 
@@ -655,6 +962,12 @@
                     .download-logo {
                         width: 80px;
                         height: 80px;
+                    }
+                }
+
+                @media (min-width: 1124px) {
+                    .download-logo {
+                        margin-right: -73px;
                     }
                 }
                 
